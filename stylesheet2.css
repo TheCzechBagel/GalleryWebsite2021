@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+html, body {
+  overflow: scroll;
+  height: 100vh;
+  margin: 0px;
+  overflow: visible;
+}
+
+ul {
+  list-style-type: none;
+  width: 100%;
+  padding: 0px;
+}
+
+.parallax {
+
+  /* Full height */
+  height: 100%;
+  padding-top: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallaxr {
+
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 1080px 960px;
+
+}
+
+.parallaxl {
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 1080px 960px;
+
+}
+
+/* Background image 1 */
+#bg1{
+  background-image: url('images/building.jpeg');
+}
+
+/* Background image 2 */
+#bg2 {
+  background-image: url('images/earth.jpeg');
+}
+
+/* Background image 3 */
+#bg3 {
+  background-image: url("images/idkchief.jpeg");
+}
+
+/* Background image 4 */
+#bg4 {
+  background-image: url("images/city.jpeg");
+}
+
+.hometext {
+  display: none;
+  background-color: #1a1a1d;
+  color: #FFFFFF;
+  font-size: 170%;
+  text-align: center;
+
+}
+
+ #header {
+  height: 100px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1a1a1d;
+}
+
+#logo {
+  margin: 0;
+  width: 200px;
+  height: 100%;
+
+}
+
+.navigationlist {
+  font-family: 'Titillium Web', sans-serif;
+  margin-left: 10%;
+  font-size: 40px;
+  float: left;
+  color: #FFFFFF;
+  vertical-align: middle;
+}
+
+#welcomeimage{
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  background-color: #FFFFFF;
+}
+
+.parallaxtextr{
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  background-color: #FFFFFF;
+  float: right;
+}
+
+.parallaxtextl{
+  float: left;
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  background-color: #FFFFFF;
+}
+
+#footer {
+  background-color: #1a1a1d;
+  height: 13%;
+  margin: 0px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  color: #ffffff;
+}
+
+
+@media (max-width: 1200px) {
+  .navigationlist {
+    display: none;
+  }
+  .hometext{
+    display: block;
+  }
+  .parallaxtextl {
+    display: none;
+  }
+  .parallaxtextr{
+    display: none;
+  }
+  .parallaxl{
+    background-size: cover;
+  }
+  .parallaxr{
+    background-size: cover;
+  }
+}
