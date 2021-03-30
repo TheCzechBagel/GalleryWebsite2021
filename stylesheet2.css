@@ -15,13 +15,14 @@ ul {
   list-style-type: none;
   width: 100%;
   padding: 0px;
+  margin-top: 7px;
 }
 
 .parallax {
 
   /* Full height */
   height: 100%;
-  padding-top: 300px;
+  padding-top: 15vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -82,7 +83,7 @@ ul {
 }
 
  #header {
-  height: 100px;
+  height: 80px;
   display: flex;
   position: fixed;
   top: 0;
@@ -100,11 +101,11 @@ ul {
 
 .navigationlist {
   font-family: 'Titillium Web', sans-serif;
-  margin-left: 10%;
+  margin-left: 8%;
   font-size: 40px;
   float: left;
   color: #FFFFFF;
-  vertical-align: middle;
+
 }
 
 #welcomeimage{
