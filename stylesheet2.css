@@ -141,6 +141,12 @@ ul {
   color: #ffffff;
 }
 
+.footercontent {
+  margin-top: 20px;
+  margin-left: 50px;
+  float: left;
+  font-size: 50px;
+}
 
 @media (max-width: 1200px) {
   .navigationlist {
