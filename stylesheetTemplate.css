@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+html, body {
+  overflow: scroll;
+  height: 100vh;
+  margin: 0px;
+  overflow: visible;
+}
+
+ul {
+  list-style-type: none;
+  width: 100%;
+  padding: 0px;
+  margin-top: 7px;
+}
+
+ #header {
+  height: 80px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1a1a1d;
+}
+
+#logo {
+  margin: 0;
+  width: 200px;
+  height: 100%;
+
+}
+
+.navigationlist {
+  font-family: 'Titillium Web', sans-serif;
+  margin-left: 8%;
+  font-size: 40px;
+  float: left;
+  color: #FFFFFF;
+
+}
+
+#footer {
+  padding: 0px;
+  background-color: #1a1a1d;
+  height: 13%;
+  margin: 0px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  color: #ffffff;
+}
+
+.footertext {
+  font-family: 'Titillium Web', sans-serif;
+  margin-top: 20px;
+  float: left;
+  font-size: 50px;
+  max-height: 40px;
+  margin-left: 50px;
+}
+
+.footerimages {
+  margin-top: 20px;
+  float: left;
+  height: 70px;
+  margin-left: 50px;
+}
+
+@media (max-width: 1200px) {
+  .navigationlist {
+    display: none;
+  }
+ 
+  #footer {
+    display: none;
+  }
+}
