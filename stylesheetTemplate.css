@@ -28,9 +28,10 @@ ul {
 }
 
 #logo {
-  margin: 0;
-  width: 200px;
-  height: 100%;
+  margin-left: 5px;
+  margin-top: 3px;
+  width: 170px;
+  height: 70px;
 
 }
 
@@ -68,7 +69,7 @@ ul {
   float: left;
   height: 70px;
   margin-left: 50px;
-}
+} 
 
 @media (max-width: 1200px) {
   .navigationlist {

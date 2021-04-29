@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+.parallax {
+
+  /* Full height */
+  height: 100%;
+  padding-top: 15vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallaxr {
+
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 1080px 960px;
+
+}
+
+.parallaxl {
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+
+  background-size: 1080px 960px;
+
+}
+
+/* Background image 1 */
+#bg1{
+  background-image: url('images/HomePageBack1.jpg');
+}
+
+/* Background image 2 */
+#bg2 {
+  background-image: url('images/HomePaintLogo.jpg');
+}
+
+/* Background image 3 */
+#bg3 {
+  background-image: url("images/SakuraTree.png");
+}
+
+/* Background image 4 */
+#bg4 {
+  background-image: url("images/city.jpeg");
+}
+
+.hometext {
+  height: 80px;
+  padding-top: 50px;
+  padding-left: 35%;
+  text-decoration: underline;
+  display: none;
+  background-color: #1a1a1d;
+  color: #FFFFFF;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+
+}
+
+
+#welcomeimage{
+  width: 50%;
+  margin-top: 10%;
+  margin-left: 25%;
+}
+
+.parallaxtextr{
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  background-color: #FFFFFF;
+  float: right;
+}
+
+.parallaxtextl{
+  float: left;
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  background-color: #FFFFFF;
+}
+
+.categorytext {
+  width: 230px;
+  margin: auto;
+  margin-top: 20%;
+  font-size: 50px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #000000;
+}
+
+.descriptext {
+  width: 700px;
+  font-family: 'roboto', sans-serif;
+  font-size: 20px;
+  color: #000000;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.linkbox {
+  padding-top: 15px;
+  font-size: 95px;
+  margin: auto;
+  margin-top: 10%;
+  height: 100px;
+  width: 400px;
+  background-color: #1a1a1d;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #FFFFFF;
+}
+
+
+@media (max-width: 1200px) {
+  .hometext{
+    display: block;
+  }
+  .parallaxtextl {
+    display: none;
+  }
+  .parallaxtextr{
+    display: none;
+  }
+  .parallaxl{
+    background-size: cover;
+  }
+  .parallaxr{
+    background-size: cover;
+  }
+}
