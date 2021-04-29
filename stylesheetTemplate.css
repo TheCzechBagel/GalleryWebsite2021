@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 html, body {
+  background-color: rgb(102, 95, 124);
   overflow: scroll;
   height: 100vh;
   margin: 0px;
