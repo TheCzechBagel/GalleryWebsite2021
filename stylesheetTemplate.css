@@ -11,6 +11,10 @@ html, body {
   overflow: visible;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style-type: none;
   width: 100%;
