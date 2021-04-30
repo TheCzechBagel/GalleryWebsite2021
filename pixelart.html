@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, inital-scale=1">
-    <title>Untitled Garbage</title>
-    <link rel="stylesheet" href="">
+    <title>Untitled Garbage :0 </title>
     <link rel="stylesheet" href="stylesheetTemplate.css">
+    <link rel="stylesheet" href="stylesheetPixel.css">
 </head>
 
 
@@ -29,14 +29,38 @@
             </a>
         </ul>
     </div>
-
-
-
+    <h1 id="title">Pixel Art Gallery</h1>
+    <div id="gallery" class="pixelentry">
+        <!-- Items inserted by script -->
+    </div>
     <div id="footer">
         <p class="footertext">Contact Me:</p>
         <img class="footerimages" src="images/EmailLogo.png"></img>
         <img class="footerimages" src="images/InstagramLogo.png"></img>
     </div>
+
+<script src="pixel_array.js"></script>
+<script>
+    for(item of pixel_array) {
+        console.log(item);
+        //Create div
+        var div = document.createElement("div");
+        //Setup image element source and alt text
+        var img = document.createElement("img");
+        var src = "images/PixelArt/"+item.id+".png";
+        img.setAttribute("src",src);
+        img.setAttribute("alt",item.name);
+        div.appendChild(img)
+
+        //Create text for under pixel art
+        var span = document.createElement("span");
+        span.innerHTML = item.name;
+        div.appendChild(span);
+
+        //Apend to website
+        document.getElementById("gallery").appendChild(div);
+    }
+</script>
 </body>
 
 </html>
