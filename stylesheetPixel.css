@@ -16,6 +16,7 @@
     color: #000000;
     font-family: "Josefin Sans",sans-serif;
     font-size: 40px;
+    min-width: 500px;
 }
 
 #gallery {
@@ -28,6 +29,7 @@
     border: 2px solid #000000;
     margin-top: 2%;
     width: 70%;
+    min-width: 600px;
     background-color: #343038;
 
 }
@@ -48,6 +50,7 @@
 
 .pixelentry img {
     height: 400px;
+    border-radius: 25px;
 }
 
 .pixelentry span{
