@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.parallax {
+
+  /* Full height */
+  height: 100%;
+  padding-top: 15vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallaxtextbox {
+  width: 60%;
+  margin-top: 10%;
+  margin: auto;
+  border-radius: 10px;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  text-align: center;
+  color: #ffffff;
+  opacity: 1.0;
+  font-family: "josefin sans", sans-serif;
+  font-size: 50px;
+}
+
+
+.parallaxtextbox p{
+    font-size: 30px;
+}
+
+.parallaxtextbox a{
+    text-decoration: underline;
+}
+
+#thirdimage {
+    padding-top: 10px;
+    padding-bottom: 10px;;
+    background-color: #000000;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+/* Background image 1 */
+#bg1{
+  background-image: url('images/AboutMe/oranges.jpg');
+}
+
+/* Background image 2 */
+#bg2 {
+  background-image: url('images/AboutMe/nightpic.jpg');
+}
+
+/* Background image 3 */
+#bg3 {
+  background-image: url("images/AboutMe/titanfall.jpg");
+}
+
