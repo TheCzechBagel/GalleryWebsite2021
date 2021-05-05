@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+* {
+  box-sizing: border-box;
+}
 
 html, body {
   background-color: rgb(102, 95, 124);
@@ -56,8 +59,6 @@ ul {
   height: 13%;
   margin: 0px;
   width: 100%;
-  left: 0;
-  bottom: 0;
   color: #ffffff;
 }
 

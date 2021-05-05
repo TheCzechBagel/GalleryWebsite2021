@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, inital-scale=1">
     <title>Paint Drawings</title>
     <link rel="stylesheet" href="stylesheetTemplate.css">
-    <link rel="stylesheet" href="stylesheetPaint.css">
+    <link rel="stylesheet" href="stylesheetPaintVer2.css">
 </head>
 
 <body>
@@ -28,34 +28,10 @@
     </ul>
 </div>
 
-<div class="fullpost">
-    <p class="posttitle">Paint Drawings</p>
-    <p class="description">These aren't meant to be good or even make much sense on their own. These drawings are made in about 5 minutes each to accompany a strange or funny conversation happening between my friends. I decided to collect and write a little context for each one, mainly to remind my friends of our greatest moments</p>
+<div id="jsload" class="parallax">
+
 </div>
 
-<div class="fullpost">
-    <p class="posttitle">A little light exercise</p>
-    <img class="imagebox" src="images/PaintPosts/Post2.png"></img>
-    <p class="description">Does your body temperature reach critically low levels when you exercise? Well apparently one of my friend's does. It's ok, one of us will always be nearby with a flamethrower in case an emergency rescue is in order.</p>
-</div>
-
-<div class="fullpost">
-    <p class="posttitle">The correct way to approach a sleeping dog</p>
-    <img class="imagebox" src="images/PaintPosts/Post3.png"></img>
-    <p class="description">Everyone has heard the phrase "let sleeping dogs lie", but how do you follow this law of life when said dog is taking up your position on the bed? The easiest and most obvious solution is an orbital drop with a parachute. By landing with your limbs around the dog [careful not to land directly on top of it] you can enjoy a peaceful night's rest while still following the greatest rule of modern society.</p>
-</div>
-
-<div class="fullpost">
-    <p class="posttitle">Eating Soil</p>
-    <img class="imagebox" src="images/PaintPosts/Post1.png"></img>
-    <p class="description">If I'm being perfectly honest I don't really know what's going on here either.</p>
-</div>
-
-<div class="fullpost">
-    <p class="posttitle">A Good Kick</p>
-    <img class="imagebox" src="images/PaintPosts/Post4.png"></img> 
-    <p class="description">It's important that everyone has a good kick every now and them to remind themselves of where they are. This compilation of kickers is part of a running <a id="link" href="https://tenor.com/view/kick-emoji-animation-3d-face-with-raised-eyebrow-gif-18640330">joke</a> within our group.</p>
-</div>
 
 
 <div id="footer">
@@ -63,5 +39,44 @@
     <img class="footerimages" src="images/EmailLogo.png"></img>
     <img class="footerimages" src="images/InstagramLogo.png"></img>
 </div>
+
+<script src="paint_array.js"></script>
+<script>
+    for(item of paint_array) {
+        console.log(item);
+        //createparallax
+        var parallax = document.createElement("div");
+        var psrc = "url(images/PaintPosts/" + item.bgid + ".png)";
+        parallax.style.backgroundImage = psrc;
+        // Create div
+        var div = document.createElement("div");
+        parallax.appendChild(div);
+
+        //Create text for Title
+        var title = document.createElement("span");
+        title.innerHTML = item.name;
+        div.appendChild(title);
+
+        // Create a content parent
+        var flexContentContainer = document.createElement("div");
+        flexContentContainer.classList.add("flexContentContainer");
+        div.appendChild(flexContentContainer);
+
+        //Create text for description
+        var descrip = document.createElement("p")
+        descrip.innerHTML = item.descrip;
+        flexContentContainer.appendChild(descrip);
+
+        // Setup image element source and alt text
+        var img = document.createElement("img");
+        var src = "images/PaintPosts/"+item.id+".png";
+        img.setAttribute("src",src);
+        img.setAttribute("alt",item.name);
+        flexContentContainer.appendChild(img);
+
+        //Apend to website
+        document.getElementById("jsload").appendChild(parallax);
+    }
+</script>
 </body>
 </html>

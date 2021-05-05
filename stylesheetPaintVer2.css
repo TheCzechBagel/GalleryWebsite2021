@@ -2,40 +2,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+* {
+    box-shadow: 0 0 5px pink;
+}
 
-.parallax {
-
+#jsload {
     /* Full height */
-    height: 100%;
-    padding-top: 15vh;
+    height: auto;
+    margin-top: 80px;
+    padding: 20px;
+    /* Create the parallax scrolling effect */
+    /* background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+#jsload > div {
+    width: 100%;
+    height: auto;
+    margin: 20px 0 20px 0;
+    padding: 50px 0 50px 0;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-.fullpost {
+}
+#jsload > div > div {
     width: 90%;
-    margin: auto;
-    margin-top: 5%;
-    background-color: #FFFFFF;
+    min-height: 500px;
+    margin: 0 auto 0 auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(7px);
     border: 2px solid #000000;
     border-radius: 25px;
-    min-width: 30%;
+}
+#jsload > div > div > span {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+}
+.flexContentContainer {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
 }
 
-.fullpost img {
-    float: right;
+.flexContentContainer img {
     display: block;
     width: 50%;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 10px;
     border: 2px solid #000000;
 }
 
-.fullpost p { 
+.flexContentContainer p { 
     float: left;
     font-family: 'roboto',sans-serif;
     text-align: center;
@@ -45,13 +71,6 @@
 }
 
 
-.fullpost h1 {
-    font-family: 'Josefin Sans', sans-serif;
-    text-align: center;
-    font-size: 40px;
-}
-
-
-#link {
+.flexContentContainer a {
     text-decoration: underline;
 }
