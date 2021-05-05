@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.parallax {
+
+    /* Full height */
+    height: 100%;
+    padding-top: 15vh;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.fullpost {
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    min-width: 30%;
+}
+
+.fullpost img {
+    float: right;
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: 2px solid #000000;
+}
+
+.fullpost p { 
+    float: left;
+    font-family: 'roboto',sans-serif;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+}
+
+
+.fullpost h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+#link {
+    text-decoration: underline;
+}
